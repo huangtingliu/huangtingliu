@@ -1,0 +1,51 @@
+---
+layout: default
+title: 文章分类
+---
+<div class="site-tag-container">
+{% for tag in site.tags %}
+	<a id="tag{{tag[0]}}" class="site-tag" href="{{ site.url }}/tags?tag={{ tag[0] }}">{{ tag[0] }}</a>
+{% endfor %}
+</div>
+
+<ul id="index-list">
+
+	
+</ul>
+
+<script>
+	var filterTag= getQueryString("tag");
+	$("#tag"+filterTag).addClass("on");
+
+	function getQueryString(name) {
+	    var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+	    var r = window.location.search.substr(1).match(reg);
+	    if (r != null) {
+	        return unescape(r[2]);
+	    }
+	    return null;
+	}
+
+	{% for tag in site.tags %}
+		if('{{ tag[0] }}' == filterTag){
+			
+			{% for post in site.posts %}
+				{% for postTag in post.tags %}
+					{%if postTag==tag[0] %}
+						var li = "<li>";
+						li+="<h2><a href=\"{{ post.url }}\">{{ post.title }}</a></h2>";
+						li+="<div class=\"post-footer\">";
+							{% for pt in post.tags %}
+								li+="<a class=\"post-tag\" href=\"{{ site.url }}/tags?tag={{ pt }}\">{{ pt }}</a>";
+							{% endfor %}
+							li+="<span class=\"post-date\">{{ post.date | date: '%Y年%m月%d日' }} </span>";
+						li+="</div>";
+						li+="</li>";
+						$("#index-list").append(li);
+					{% endif %}
+				{% endfor %}
+				
+			{% endfor %}
+		}
+	{% endfor %}
+</script>
