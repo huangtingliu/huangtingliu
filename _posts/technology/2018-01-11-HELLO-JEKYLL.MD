@@ -20,22 +20,22 @@ imgPath: 2018-01-11-HELLO-JEKYLL
 这里就不介绍github注册流程了(本文前提你已掌握基本的github操作)。
 
 1. 登录github,创建一个仓库
-![]({{site.post-img-dir}}/{{page.imgPath}}/create-reponsitory.png)
+![]({{ site.url }}{{site.post-img-dir}}/{{page.imgPath}}/create-reponsitory.png)
 2. 打开项目的setting,拉到GitHub Pages项，选择模板和自定义域名（大概需要十分钟生效），我这里选择的是jekyll-theme-cayman模板
-![]({{site.post-img-dir}}/{{page.imgPath}}/github-setting-github-pages.png)
+![]({{ site.url }}{{site.post-img-dir}}/{{page.imgPath}}/github-setting-github-pages.png)
 
 3. 访问https://(username).github.io/(username)/ 就可以访问了，如果你上一步中配置了Custom domain并对域名做了解析，那么访问你的域名也是可以的。
-![]({{site.post-img-dir}}/{{page.imgPath}}/blog-visit.png)
+![]({{ site.url }}{{site.post-img-dir}}/{{page.imgPath}}/blog-visit.png)
 
 基础模板有了，那么如何搭建自己需要的效果的博客呢？通过git拉取项目，本地搭建jekyll服务，进行本地调试博客。
 
 ### windows本地搭建jekyll服务
 
 1. 下载安装Ruby(<https://rubyinstaller.org/downloads/>)，下载完exe点击安装就可以了
-![]({{site.post-img-dir}}/{{page.imgPath}}/ruby-download.png)
+![]({{ site.url }}{{site.post-img-dir}}/{{page.imgPath}}/ruby-download.png)
 
 2. 下载安装RubyDevKit,exe文件直接安装，安装完后windows命令行cd xxx进入安装目录，输入dk.rb init, 将会生成一个config.yml文件，最后执行dk.rb install
-![]({{site.post-img-dir}}/{{page.imgPath}}/RubyDevKit-download.png)
+![]({{ site.url }}{{site.post-img-dir}}/{{page.imgPath}}/RubyDevKit-download.png)
 
 3. 下载安装Rubygems,解压后，cmd命令进入安装目录执行命令setup.rb
 	>下载地址：<https://rubygems.org/pages/download> 
@@ -62,13 +62,13 @@ jekyll serve --safe
 
 	>命令行
 
-	![]({{site.post-img-dir}}/{{page.imgPath}}/jekyll-run-cmd.png)
+	![]({{ site.url }}{{site.post-img-dir}}/{{page.imgPath}}/jekyll-run-cmd.png)
 	>生成的目录
 
-	![]({{site.post-img-dir}}/{{page.imgPath}}/jekyll-run-dir.png)
+	![]({{ site.url }}{{site.post-img-dir}}/{{page.imgPath}}/jekyll-run-dir.png)
 	>浏览器访问
 	
-	![]({{site.post-img-dir}}/{{page.imgPath}}/jekyll-run-visit.png)
+	![]({{ site.url }}{{site.post-img-dir}}/{{page.imgPath}}/jekyll-run-visit.png)
 
 >有很多细节的东西可能没讲清楚，希望能帮助到想使用jekyll搭建博客的人
 
