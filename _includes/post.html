@@ -1,0 +1,43 @@
+{% if page.title %}
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+	var gitment = new Gitment({
+	id: 'huangtingliu blog', // 可选。默认为 location.href
+	owner: 'huangtingliu',
+	repo: 'huangtingliu',
+	oauth: {
+	  client_id: 'b16cc8efeb2e54a16b89',
+	  client_secret: 'dddb60dd7875df28aaedb2a25b4e04b64ecfae9b',
+	},
+	})
+	gitment.render('container')
+</script>
+
+{% endif %}
+
+<!-- {% if page.title %}
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMzMwMy85ODYw">
+      <script type="text/javascript">
+         (function(d, s) {
+             var j, e = d.getElementsByTagName(s)[0];
+      
+             if (typeof LivereTower === 'function') { return; }
+      
+             j = d.createElement(s);
+             j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+             j.async = true;
+      
+             e.parentNode.insertBefore(j, e);
+         })(document, 'script');
+      </script>
+      <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+      </div>
+      {% endif %} -->
+      
+      <!-- {% if site.github.is_project_page %}
+        <footer class="site-footer">
+          <span class="site-footer-credits">view source on github <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a>.</span>
+        </footer>
+      {% endif %} -->	

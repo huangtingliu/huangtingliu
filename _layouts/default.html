@@ -33,13 +33,8 @@
 
     <section class="main-content">
       {{ content }}
-      
-      
-      {% if site.github.is_project_page %}
-        <footer class="site-footer">
-          <span class="site-footer-credits">view source on github <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a>.</span>
-        </footer>
-      {% endif %}
+      <!-- 评论功能 -->
+      {% include post.html %}
     </section>
 
     {% if site.google_analytics %}
