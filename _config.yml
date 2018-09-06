@@ -5,6 +5,8 @@ description: The Write Less,Do More
 permalink: pretty
 post-img-dir: /assets/img/post/
 
+baidu-analysis: true
+
 # paginate: 5
 
 defaults:
