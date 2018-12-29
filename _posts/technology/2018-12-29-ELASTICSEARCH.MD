@@ -5,7 +5,7 @@ tags: [大数据,搜索引擎]
 imgPath: 2018-09-14-ELASTICSEARCH
 ---
 
-在上一篇文章ELASTICSEARCH搜索引擎（上）中介绍了在windows下elasticsearch的基本安装，本文继续介绍elasticsearch的基本用法
+在上一篇文章[ELASTICSEARCH搜索引擎（上）]({{site.url}}/2018/09/14/ELASTICSEARCH/)中介绍了在windows下elasticsearch的基本安装，本文继续介绍elasticsearch的基本用法
 
 # 一、elasticsearch的基础概念
 ### 1. 集群
