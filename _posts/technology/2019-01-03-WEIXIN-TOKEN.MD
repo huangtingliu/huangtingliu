@@ -6,7 +6,7 @@ imgPath: 2019-01-03-WEIXIN-TOKEN
 ---
 接入微信公众平台开发，最开始的一步就是让你验证服务器的有效性。  
 
-官方文档：<https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421135319>
+官方文档：<https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421135319>{:target="_blank"}
 
 ![]({{site.url}}{{site.post-img-dir}}/{{page.imgPath}}/server-config.jpg)
 
